@@ -1,0 +1,47 @@
+1448939438145	Delete element
+1448992611808	Delete element
+1448992614783	Delete element
+1448992873542	Delete element
+1448992880517	Delete elements
+1448993458566	Delete elements
+1448993748116	Delete elements
+1448994487967	Delete elements
+1448995213738	Delete elements
+1448998512015	Delete elements
+1448998531286	Copy compilation unit
+1448999964012	Delete elements
+1449000485488	Rename method 'generateQueue'
+1449003921814	Rename method 'getQueue'
+1449004093863	Rename local variable 'tempWord'
+1449004100923	Rename local variable 'tempDef'
+1449004875539	Delete elements
+1449005090574	Rename local variable 'file'
+1449005130454	Rename local variable 'map'
+1449005918489	Delete elements
+1449006119612	Copy file
+1449006554799	Rename local variable 'orderedQueue'
+1449006599600	Rename local variable 'orderedQueue'
+1449007583392	Rename method 'copyQueue'
+1449007875018	Rename method 'outputIndex'
+1449007893946	Rename method 'outputPage'
+1449007939951	Rename method 'printTermPage'
+1449021734535	Rename local variable 'orderedQueue'
+1449021961460	Rename local variable 'out'
+1449022133266	Rename local variable 'out'
+1449022575108	Delete elements
+1449022670684	Rename local variable 'checkSet'
+1449022679816	Rename local variable 'defMap'
+1449022891553	Rename local variable 'pos'
+1449022899645	Rename local variable 'letter'
+1449023898708	Rename local variable 'letter'
+1449023924293	Rename local variable 'subText'
+1449024153262	Rename local variable 'separatorStr'
+1449024355034	Rename local variable 'str'
+1449024588554	Rename local variable 's'
+1449024597619	Rename local variable 'token'
+1449024612460	Rename local variable 'definition'
+1449024679592	Rename local variable 'orderedTerm'
+1449024741952	Rename local variable 'orderedSet'
+1449072189292	Delete element
+1449072202942	Rename type 'Glossary2'
+1449072464104	Rename method 'separatorMain'

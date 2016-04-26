@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="3" timestamp="1458661880582" analysisTimestamp="1458661880128" release="">
+  <Project projectName="ProgramPrettyPrint">
+    <Jar>E:\eclipse\workspace\ProgramPrettyPrint\bin\Program1PrettyPrint1.class</Jar>
+    <AuxClasspathEntry>E:\eclipse\workspace\ProgramPrettyPrint\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\sheng\Desktop\components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>E:\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>E:\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_66\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>E:\eclipse\workspace\ProgramPrettyPrint\src</SrcDir>
+    <SrcDir>E:\eclipse\workspace\ProgramPrettyPrint\test</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 22 Mar 2016 11:51:20 -0400" total_classes="1" referenced_classes="37" total_bugs="0" total_size="67" num_packages="1" java_version="1.8.0_66" vm_version="25.66-b18" cpu_seconds="1.50" clock_seconds="0.46" peak_mbytes="615.31" alloc_mbytes="910.50" gc_seconds="0.02">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="67">
+      <ClassStats class="Program1PrettyPrint1" sourceFile="Program1PrettyPrint1.java" interface="false" size="67" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="127" invocations="364" avgMicrosecondsPerInvocation="350" maxMicrosecondsPerInvocation="17308" standardDeviationMircosecondsPerInvocation="1101"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="86" invocations="2" avgMicrosecondsPerInvocation="43352" maxMicrosecondsPerInvocation="75843" standardDeviationMircosecondsPerInvocation="32490"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="33" invocations="368" avgMicrosecondsPerInvocation="89" maxMicrosecondsPerInvocation="237" standardDeviationMircosecondsPerInvocation="43"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="17" invocations="37" avgMicrosecondsPerInvocation="460" maxMicrosecondsPerInvocation="4132" standardDeviationMircosecondsPerInvocation="801"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="15" invocations="37" avgMicrosecondsPerInvocation="408" maxMicrosecondsPerInvocation="4481" standardDeviationMircosecondsPerInvocation="771"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="13" invocations="330" avgMicrosecondsPerInvocation="40" maxMicrosecondsPerInvocation="702" standardDeviationMircosecondsPerInvocation="68"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="12" invocations="79" avgMicrosecondsPerInvocation="161" maxMicrosecondsPerInvocation="750" standardDeviationMircosecondsPerInvocation="147"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1458655486528" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1458655486537" release="" codeSize="44" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1458661380174" release="" codeSize="39" numClasses="1"/>
+  </History>
+</BugCollection>

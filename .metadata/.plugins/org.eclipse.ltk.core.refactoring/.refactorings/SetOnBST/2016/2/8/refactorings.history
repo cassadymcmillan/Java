@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;removedElement&apos; in &apos;SetTest.testRemoveLeavingEmpty()&apos; to &apos;removedTest&apos;&#x0D;&#x0A;- Original project: &apos;SetOnBST&apos;&#x0D;&#x0A;- Original element: &apos;SetTest.testRemoveLeavingEmpty().removedElement&apos;&#x0D;&#x0A;- Renamed element: &apos;removedElement&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;removedElement&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/test&lt;{SetTest.java[SetTest~testRemoveLeavingEmpty@removedElement!3569!3606!3576!3589!QString;!0!false" name="removedTest" references="true" stamp="1455824733434" version="1.0"/>
+</session>

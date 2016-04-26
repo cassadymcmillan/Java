@@ -1,0 +1,21 @@
+
+    IF next-is-empty THEN
+        move
+    ELSE
+    
+        IF next-is-enemy THEN
+            infect
+        END IF
+    
+        IF next-is-wall THEN
+            turnleft
+        END IF
+        
+    END IF
+    
+    move
+    
+    IF next-is-enemy THEN
+            infect
+    END IF
+

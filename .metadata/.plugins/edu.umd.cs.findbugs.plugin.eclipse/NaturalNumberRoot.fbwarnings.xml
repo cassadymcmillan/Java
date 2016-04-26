@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="40" timestamp="1446519040865" analysisTimestamp="1446519040310" release="">
+  <Project projectName="NaturalNumberRoot">
+    <Jar>C:\Users\sheng\Desktop\workspace\NaturalNumberRoot\bin\NaturalNumberRoot.class</Jar>
+    <AuxClasspathEntry>C:\Users\sheng\Desktop\workspace\NaturalNumberRoot\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\sheng\Desktop\components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\sheng\Desktop\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\sheng\Desktop\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_60\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\sheng\Desktop\workspace\NaturalNumberRoot\test</SrcDir>
+    <SrcDir>C:\Users\sheng\Desktop\workspace\NaturalNumberRoot\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DB_DUPLICATE_BRANCHES" priority="2" rank="17" abbrev="DB" category="STYLE" first="22" last="23" removedByChange="true">
+    <Class classname="NaturalNumberRoot">
+      <SourceLine classname="NaturalNumberRoot" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    </Class>
+    <Method classname="NaturalNumberRoot" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="NaturalNumberRoot" start="135" end="159" startBytecode="0" endBytecode="768" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    </Method>
+    <SourceLine classname="NaturalNumberRoot" start="150" end="151" startBytecode="444" endBytecode="450" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    <SourceLine classname="NaturalNumberRoot" start="152" end="152" startBytecode="453" endBytecode="454" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="32" last="32" removedByChange="true">
+    <Class classname="NaturalNumberRoot">
+      <SourceLine classname="NaturalNumberRoot" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    </Class>
+    <Method classname="NaturalNumberRoot" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="NaturalNumberRoot" start="135" end="143" startBytecode="0" endBytecode="26" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    </Method>
+    <LocalVariable name="out" register="1" pc="8" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="NaturalNumberRoot" start="135" end="135" startBytecode="7" endBytecode="7" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    <SourceLine classname="NaturalNumberRoot" start="135" end="135" startBytecode="7" endBytecode="7" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="out"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="5" last="6" removedByChange="true">
+    <Class classname="NaturalNumberRoot">
+      <SourceLine classname="NaturalNumberRoot" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    </Class>
+    <Method classname="NaturalNumberRoot" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="NaturalNumberRoot" start="55" end="80" startBytecode="0" endBytecode="387" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    </Method>
+    <LocalVariable name="r" register="7" pc="425" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="NaturalNumberRoot" start="67" end="67" startBytecode="423" endBytecode="423" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    <SourceLine classname="NaturalNumberRoot" start="67" end="67" startBytecode="423" endBytecode="423" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="r"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="24" last="30" removedByChange="true">
+    <Class classname="NaturalNumberRoot">
+      <SourceLine classname="NaturalNumberRoot" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    </Class>
+    <Method classname="NaturalNumberRoot" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="NaturalNumberRoot" start="135" end="148" startBytecode="0" endBytecode="300" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    </Method>
+    <LocalVariable name="numbers" register="2" pc="142" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="NaturalNumberRoot" start="137" end="137" startBytecode="141" endBytecode="141" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    <SourceLine classname="NaturalNumberRoot" start="137" end="137" startBytecode="141" endBytecode="141" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="numbers"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="24" last="30" removedByChange="true">
+    <Class classname="NaturalNumberRoot">
+      <SourceLine classname="NaturalNumberRoot" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    </Class>
+    <Method classname="NaturalNumberRoot" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="NaturalNumberRoot" start="135" end="148" startBytecode="0" endBytecode="300" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    </Method>
+    <LocalVariable name="results" register="4" pc="392" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="NaturalNumberRoot" start="142" end="142" startBytecode="390" endBytecode="390" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    <SourceLine classname="NaturalNumberRoot" start="142" end="142" startBytecode="390" endBytecode="390" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="results"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="24" last="30" removedByChange="true">
+    <Class classname="NaturalNumberRoot">
+      <SourceLine classname="NaturalNumberRoot" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    </Class>
+    <Method classname="NaturalNumberRoot" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="NaturalNumberRoot" start="135" end="148" startBytecode="0" endBytecode="300" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    </Method>
+    <LocalVariable name="roots" register="3" pc="273" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="NaturalNumberRoot" start="140" end="140" startBytecode="272" endBytecode="272" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    <SourceLine classname="NaturalNumberRoot" start="140" end="140" startBytecode="272" endBytecode="272" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="roots"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" rank="16" abbrev="MS" category="MALICIOUS_CODE" first="29" last="30" removedByChange="true">
+    <Class classname="NaturalNumberRoot">
+      <SourceLine classname="NaturalNumberRoot" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    </Class>
+    <Field classname="NaturalNumberRoot" name="product" signature="Lcomponents/naturalnumber/NaturalNumber;" isStatic="true">
+      <SourceLine classname="NaturalNumberRoot" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    </Field>
+    <SourceLine classname="NaturalNumberRoot" start="101" end="101" startBytecode="24" endBytecode="24" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+  </BugInstance>
+  <BugInstance type="SA_LOCAL_DOUBLE_ASSIGNMENT" priority="2" rank="17" abbrev="SA" category="STYLE" first="24" last="24" removedByChange="true">
+    <Class classname="NaturalNumberRoot">
+      <SourceLine classname="NaturalNumberRoot" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    </Class>
+    <Method classname="NaturalNumberRoot" name="productOfDigits1" signature="(Lcomponents/naturalnumber/NaturalNumber;)Lcomponents/naturalnumber/NaturalNumber;" isStatic="true">
+      <SourceLine classname="NaturalNumberRoot" start="102" end="111" startBytecode="0" endBytecode="196" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    </Method>
+    <LocalVariable name="i" register="3" pc="25" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="NaturalNumberRoot" start="104" end="104" startBytecode="25" endBytecode="25" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_OBJECT" priority="2" rank="17" abbrev="UC" category="STYLE" first="24" last="30" removedByChange="true">
+    <Class classname="NaturalNumberRoot">
+      <SourceLine classname="NaturalNumberRoot" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    </Class>
+    <Method classname="NaturalNumberRoot" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="NaturalNumberRoot" start="135" end="148" startBytecode="0" endBytecode="581" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    </Method>
+    <String value="numbers"/>
+    <Type descriptor="[I"/>
+    <SourceLine classname="NaturalNumberRoot" start="137" end="137" startBytecode="10" endBytecode="10" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_OBJECT" priority="2" rank="17" abbrev="UC" category="STYLE" first="24" last="30" removedByChange="true">
+    <Class classname="NaturalNumberRoot">
+      <SourceLine classname="NaturalNumberRoot" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    </Class>
+    <Method classname="NaturalNumberRoot" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="NaturalNumberRoot" start="135" end="148" startBytecode="0" endBytecode="581" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    </Method>
+    <String value="results"/>
+    <Type descriptor="[I"/>
+    <SourceLine classname="NaturalNumberRoot" start="142" end="142" startBytecode="275" endBytecode="275" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_OBJECT" priority="2" rank="17" abbrev="UC" category="STYLE" first="24" last="30" removedByChange="true">
+    <Class classname="NaturalNumberRoot">
+      <SourceLine classname="NaturalNumberRoot" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    </Class>
+    <Method classname="NaturalNumberRoot" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="NaturalNumberRoot" start="135" end="148" startBytecode="0" endBytecode="581" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    </Method>
+    <String value="roots"/>
+    <Type descriptor="[I"/>
+    <SourceLine classname="NaturalNumberRoot" start="140" end="140" startBytecode="144" endBytecode="144" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 2 Nov 2015 21:50:40 -0500" total_classes="1" referenced_classes="14" total_bugs="0" total_size="73" num_packages="1" java_version="1.8.0_60" vm_version="25.60-b23" cpu_seconds="1.95" clock_seconds="0.56" peak_mbytes="572.42" alloc_mbytes="910.50" gc_seconds="0.00">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="73">
+      <ClassStats class="NaturalNumberRoot" sourceFile="NaturalNumberRoot.java" interface="false" size="73" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="147" invocations="2" avgMicrosecondsPerInvocation="73802" maxMicrosecondsPerInvocation="114545" standardDeviationMircosecondsPerInvocation="40743"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="140" invocations="303" avgMicrosecondsPerInvocation="463" maxMicrosecondsPerInvocation="14945" standardDeviationMircosecondsPerInvocation="1134"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="41" invocations="303" avgMicrosecondsPerInvocation="136" maxMicrosecondsPerInvocation="1127" standardDeviationMircosecondsPerInvocation="82"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="22" invocations="14" avgMicrosecondsPerInvocation="1587" maxMicrosecondsPerInvocation="8975" standardDeviationMircosecondsPerInvocation="2330"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="19" invocations="40" avgMicrosecondsPerInvocation="498" maxMicrosecondsPerInvocation="3713" standardDeviationMircosecondsPerInvocation="614"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="16" invocations="270" avgMicrosecondsPerInvocation="61" maxMicrosecondsPerInvocation="890" standardDeviationMircosecondsPerInvocation="96"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="16" invocations="14" avgMicrosecondsPerInvocation="1159" maxMicrosecondsPerInvocation="7121" standardDeviationMircosecondsPerInvocation="1776"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1445309080737" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1445309080737" release="" codeSize="9" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1445309087239" release="" codeSize="33" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1445309700419" release="" codeSize="35" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1445309762257" release="" codeSize="34" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1445312062742" release="" codeSize="28" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1445360614900" release="" codeSize="28" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1445361901589" release="" codeSize="65" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1445362062796" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1445362159881" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="10" timestamp="1445362313120" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="11" timestamp="1445393455463" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="12" timestamp="1445393551295" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="13" timestamp="1445393601922" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="14" timestamp="1445393613682" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="15" timestamp="1445393637312" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="16" timestamp="1445393651893" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="17" timestamp="1445393817131" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="18" timestamp="1445393845795" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="19" timestamp="1445394140196" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="20" timestamp="1445395111386" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="21" timestamp="1445395198725" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="22" timestamp="1446137497709" release="" codeSize="84" numClasses="1"/>
+    <AppVersion sequence="23" timestamp="1446137633913" release="" codeSize="86" numClasses="1"/>
+    <AppVersion sequence="24" timestamp="1446137760975" release="" codeSize="77" numClasses="1"/>
+    <AppVersion sequence="25" timestamp="1446137765075" release="" codeSize="77" numClasses="1"/>
+    <AppVersion sequence="26" timestamp="1446137870476" release="" codeSize="77" numClasses="1"/>
+    <AppVersion sequence="27" timestamp="1446137917975" release="" codeSize="77" numClasses="1"/>
+    <AppVersion sequence="28" timestamp="1446137987937" release="" codeSize="78" numClasses="1"/>
+    <AppVersion sequence="29" timestamp="1446138022926" release="" codeSize="79" numClasses="1"/>
+    <AppVersion sequence="30" timestamp="1446138030572" release="" codeSize="79" numClasses="1"/>
+    <AppVersion sequence="31" timestamp="1446138222378" release="" codeSize="71" numClasses="1"/>
+    <AppVersion sequence="32" timestamp="1446141776120" release="" codeSize="73" numClasses="1"/>
+    <AppVersion sequence="33" timestamp="1446141873413" release="" codeSize="74" numClasses="1"/>
+    <AppVersion sequence="34" timestamp="1446141887930" release="" codeSize="74" numClasses="1"/>
+    <AppVersion sequence="35" timestamp="1446141937401" release="" codeSize="74" numClasses="1"/>
+    <AppVersion sequence="36" timestamp="1446141944963" release="" codeSize="74" numClasses="1"/>
+    <AppVersion sequence="37" timestamp="1446512991820" release="" codeSize="78" numClasses="1"/>
+    <AppVersion sequence="38" timestamp="1446513006234" release="" codeSize="78" numClasses="1"/>
+    <AppVersion sequence="39" timestamp="1446518643636" release="" codeSize="72" numClasses="1"/>
+  </History>
+</BugCollection>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="51" timestamp="1442598612568" analysisTimestamp="1442598611724" release="">
+  <Project projectName="Pseudoscience">
+    <Jar>C:\Users\sheng\Desktop\workspace\Pseudoscience\bin\ABCDGuesser2.class</Jar>
+    <AuxClasspathEntry>C:\Users\sheng\Desktop\workspace\Pseudoscience\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\sheng\Desktop\components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\sheng\Desktop\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\sheng\Desktop\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_60\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\sheng\Desktop\workspace\Pseudoscience\test</SrcDir>
+    <SrcDir>C:\Users\sheng\Desktop\workspace\Pseudoscience\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="3" last="3" removedByChange="true">
+    <Class classname="ABCDGuesser1">
+      <SourceLine classname="ABCDGuesser1" sourcefile="ABCDGuesser1.java" sourcepath="ABCDGuesser1.java"/>
+    </Class>
+    <Method classname="ABCDGuesser1" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="ABCDGuesser1" start="15" end="32" startBytecode="0" endBytecode="116" sourcefile="ABCDGuesser1.java" sourcepath="ABCDGuesser1.java"/>
+    </Method>
+    <LocalVariable name="b" register="6" pc="187" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="ABCDGuesser1" start="27" end="27" startBytecode="185" endBytecode="185" sourcefile="ABCDGuesser1.java" sourcepath="ABCDGuesser1.java"/>
+    <SourceLine classname="ABCDGuesser1" start="27" end="27" startBytecode="185" endBytecode="185" sourcefile="ABCDGuesser1.java" sourcepath="ABCDGuesser1.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="b"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="4" last="4" removedByChange="true">
+    <Class classname="ABCDGuesser1">
+      <SourceLine classname="ABCDGuesser1" sourcefile="ABCDGuesser1.java" sourcepath="ABCDGuesser1.java"/>
+    </Class>
+    <Method classname="ABCDGuesser1" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="ABCDGuesser1" start="15" end="35" startBytecode="0" endBytecode="152" sourcefile="ABCDGuesser1.java" sourcepath="ABCDGuesser1.java"/>
+    </Method>
+    <LocalVariable name="s" register="7" pc="240" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="ABCDGuesser1" start="30" end="30" startBytecode="238" endBytecode="238" sourcefile="ABCDGuesser1.java" sourcepath="ABCDGuesser1.java"/>
+    <SourceLine classname="ABCDGuesser1" start="30" end="30" startBytecode="238" endBytecode="238" sourcefile="ABCDGuesser1.java" sourcepath="ABCDGuesser1.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="s"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="3" last="4" removedByChange="true">
+    <Class classname="ABCDGuesser1">
+      <SourceLine classname="ABCDGuesser1" sourcefile="ABCDGuesser1.java" sourcepath="ABCDGuesser1.java"/>
+    </Class>
+    <Method classname="ABCDGuesser1" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="ABCDGuesser1" start="15" end="35" startBytecode="0" endBytecode="152" sourcefile="ABCDGuesser1.java" sourcepath="ABCDGuesser1.java"/>
+    </Method>
+    <LocalVariable name="u" register="3" pc="31" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="ABCDGuesser1" start="19" end="19" startBytecode="30" endBytecode="30" sourcefile="ABCDGuesser1.java" sourcepath="ABCDGuesser1.java"/>
+    <SourceLine classname="ABCDGuesser1" start="19" end="19" startBytecode="30" endBytecode="30" sourcefile="ABCDGuesser1.java" sourcepath="ABCDGuesser1.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="u"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="IL_INFINITE_LOOP" priority="1" rank="8" abbrev="IL" category="CORRECTNESS" first="6" last="6" removedByChange="true">
+    <Class classname="ABCDGuesser1">
+      <SourceLine classname="ABCDGuesser1" sourcefile="ABCDGuesser1.java" sourcepath="ABCDGuesser1.java"/>
+    </Class>
+    <Method classname="ABCDGuesser1" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="ABCDGuesser1" start="19" end="72" startBytecode="0" endBytecode="1022" sourcefile="ABCDGuesser1.java" sourcepath="ABCDGuesser1.java"/>
+    </Method>
+    <SourceLine classname="ABCDGuesser1" start="54" end="54" startBytecode="299" endBytecode="299" sourcefile="ABCDGuesser1.java" sourcepath="ABCDGuesser1.java"/>
+    <LocalVariable name="n" register="33" pc="299" role="LOCAL_VARIABLE_NAMED"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE" first="6" last="6" removedByChange="true">
+    <Class classname="ABCDGuesser1">
+      <SourceLine classname="ABCDGuesser1" sourcefile="ABCDGuesser1.java" sourcepath="ABCDGuesser1.java"/>
+    </Class>
+    <Method classname="ABCDGuesser1" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="ABCDGuesser1" start="19" end="72" startBytecode="0" endBytecode="1022" sourcefile="ABCDGuesser1.java" sourcepath="ABCDGuesser1.java"/>
+    </Method>
+    <Method classname="java.lang.Math" name="abs" signature="(D)D" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Math"/>
+    </Method>
+    <SourceLine classname="ABCDGuesser1" start="59" end="59" startBytecode="282" endBytecode="282" sourcefile="ABCDGuesser1.java" sourcepath="ABCDGuesser1.java"/>
+    <SourceLine classname="ABCDGuesser1" start="59" end="59" startBytecode="282" endBytecode="282" sourcefile="ABCDGuesser1.java" sourcepath="ABCDGuesser1.java"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_OBJECT" priority="2" rank="17" abbrev="UC" category="STYLE" first="3" last="4" removedByChange="true">
+    <Class classname="ABCDGuesser1">
+      <SourceLine classname="ABCDGuesser1" sourcefile="ABCDGuesser1.java" sourcepath="ABCDGuesser1.java"/>
+    </Class>
+    <Method classname="ABCDGuesser1" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="ABCDGuesser1" start="15" end="35" startBytecode="0" endBytecode="434" sourcefile="ABCDGuesser1.java" sourcepath="ABCDGuesser1.java"/>
+    </Method>
+    <String value="a"/>
+    <Type descriptor="[I"/>
+    <SourceLine classname="ABCDGuesser1" start="21" end="21" startBytecode="32" endBytecode="32" sourcefile="ABCDGuesser1.java" sourcepath="ABCDGuesser1.java"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_OBJECT" priority="2" rank="17" abbrev="UC" category="STYLE" first="3" last="4" removedByChange="true">
+    <Class classname="ABCDGuesser1">
+      <SourceLine classname="ABCDGuesser1" sourcefile="ABCDGuesser1.java" sourcepath="ABCDGuesser1.java"/>
+    </Class>
+    <Method classname="ABCDGuesser1" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="ABCDGuesser1" start="15" end="35" startBytecode="0" endBytecode="434" sourcefile="ABCDGuesser1.java" sourcepath="ABCDGuesser1.java"/>
+    </Method>
+    <String value="b"/>
+    <Type descriptor="[D"/>
+    <SourceLine classname="ABCDGuesser1" start="27" end="27" startBytecode="74" endBytecode="74" sourcefile="ABCDGuesser1.java" sourcepath="ABCDGuesser1.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Fri, 18 Sep 2015 13:50:11 -0400" total_classes="1" referenced_classes="15" total_bugs="0" total_size="48" num_packages="1" java_version="1.8.0_60" vm_version="25.60-b23" cpu_seconds="1.89" clock_seconds="0.84" peak_mbytes="624.88" alloc_mbytes="910.50" gc_seconds="0.03">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="48">
+      <ClassStats class="ABCDGuesser2" sourceFile="ABCDGuesser2.java" interface="false" size="48" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="246" invocations="323" avgMicrosecondsPerInvocation="763" maxMicrosecondsPerInvocation="35023" standardDeviationMircosecondsPerInvocation="2392"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="225" invocations="2" avgMicrosecondsPerInvocation="112851" maxMicrosecondsPerInvocation="209843" standardDeviationMircosecondsPerInvocation="96992"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="58" invocations="323" avgMicrosecondsPerInvocation="181" maxMicrosecondsPerInvocation="423" standardDeviationMircosecondsPerInvocation="55"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="25" invocations="3" avgMicrosecondsPerInvocation="8465" maxMicrosecondsPerInvocation="25212" standardDeviationMircosecondsPerInvocation="11841"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="23" invocations="15" avgMicrosecondsPerInvocation="1572" maxMicrosecondsPerInvocation="7299" standardDeviationMircosecondsPerInvocation="2013"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="20" invocations="62" avgMicrosecondsPerInvocation="335" maxMicrosecondsPerInvocation="3271" standardDeviationMircosecondsPerInvocation="470"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="18" invocations="288" avgMicrosecondsPerInvocation="65" maxMicrosecondsPerInvocation="835" standardDeviationMircosecondsPerInvocation="107"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="17" invocations="3" avgMicrosecondsPerInvocation="5667" maxMicrosecondsPerInvocation="16430" standardDeviationMircosecondsPerInvocation="7610"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1442507377952" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1442507377955" release="" codeSize="3" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1442508474043" release="" codeSize="7" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1442508646642" release="" codeSize="21" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1442508809550" release="" codeSize="23" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1442509303391" release="" codeSize="9" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1442510399393" release="" codeSize="41" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1442510494915" release="" codeSize="47" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1442510757790" release="" codeSize="48" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1442510967875" release="" codeSize="53" numClasses="1"/>
+    <AppVersion sequence="10" timestamp="1442510989005" release="" codeSize="54" numClasses="1"/>
+    <AppVersion sequence="11" timestamp="1442511101123" release="" codeSize="54" numClasses="1"/>
+    <AppVersion sequence="12" timestamp="1442511108837" release="" codeSize="54" numClasses="1"/>
+    <AppVersion sequence="13" timestamp="1442511116701" release="" codeSize="54" numClasses="1"/>
+    <AppVersion sequence="14" timestamp="1442511250527" release="" codeSize="53" numClasses="1"/>
+    <AppVersion sequence="15" timestamp="1442511434952" release="" codeSize="51" numClasses="1"/>
+    <AppVersion sequence="16" timestamp="1442520701803" release="" codeSize="51" numClasses="1"/>
+    <AppVersion sequence="17" timestamp="1442520821247" release="" codeSize="51" numClasses="1"/>
+    <AppVersion sequence="18" timestamp="1442528580113" release="" codeSize="54" numClasses="1"/>
+    <AppVersion sequence="19" timestamp="1442528777365" release="" codeSize="54" numClasses="1"/>
+    <AppVersion sequence="20" timestamp="1442528993767" release="" codeSize="4" numClasses="1"/>
+    <AppVersion sequence="21" timestamp="1442529036807" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="22" timestamp="1442529078614" release="" codeSize="54" numClasses="1"/>
+    <AppVersion sequence="23" timestamp="1442529084199" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="24" timestamp="1442590615854" release="" codeSize="49" numClasses="1"/>
+    <AppVersion sequence="25" timestamp="1442590649968" release="" codeSize="48" numClasses="1"/>
+    <AppVersion sequence="26" timestamp="1442590676747" release="" codeSize="48" numClasses="1"/>
+    <AppVersion sequence="27" timestamp="1442590841576" release="" codeSize="54" numClasses="1"/>
+    <AppVersion sequence="28" timestamp="1442590873346" release="" codeSize="48" numClasses="1"/>
+    <AppVersion sequence="29" timestamp="1442591623462" release="" codeSize="54" numClasses="1"/>
+    <AppVersion sequence="30" timestamp="1442591655520" release="" codeSize="48" numClasses="1"/>
+    <AppVersion sequence="31" timestamp="1442591725793" release="" codeSize="53" numClasses="1"/>
+    <AppVersion sequence="32" timestamp="1442591805750" release="" codeSize="47" numClasses="1"/>
+    <AppVersion sequence="33" timestamp="1442592307377" release="" codeSize="47" numClasses="1"/>
+    <AppVersion sequence="34" timestamp="1442592327404" release="" codeSize="47" numClasses="1"/>
+    <AppVersion sequence="35" timestamp="1442592726031" release="" codeSize="47" numClasses="1"/>
+    <AppVersion sequence="36" timestamp="1442592728374" release="" codeSize="53" numClasses="1"/>
+    <AppVersion sequence="37" timestamp="1442593076584" release="" codeSize="47" numClasses="1"/>
+    <AppVersion sequence="38" timestamp="1442593121672" release="" codeSize="47" numClasses="1"/>
+    <AppVersion sequence="39" timestamp="1442593123825" release="" codeSize="53" numClasses="1"/>
+    <AppVersion sequence="40" timestamp="1442597601615" release="" codeSize="54" numClasses="1"/>
+    <AppVersion sequence="41" timestamp="1442597603856" release="" codeSize="48" numClasses="1"/>
+    <AppVersion sequence="42" timestamp="1442598041184" release="" codeSize="54" numClasses="1"/>
+    <AppVersion sequence="43" timestamp="1442598087896" release="" codeSize="48" numClasses="1"/>
+    <AppVersion sequence="44" timestamp="1442598130851" release="" codeSize="48" numClasses="1"/>
+    <AppVersion sequence="45" timestamp="1442598133946" release="" codeSize="54" numClasses="1"/>
+    <AppVersion sequence="46" timestamp="1442598241800" release="" codeSize="54" numClasses="1"/>
+    <AppVersion sequence="47" timestamp="1442598263587" release="" codeSize="48" numClasses="1"/>
+    <AppVersion sequence="48" timestamp="1442598425664" release="" codeSize="54" numClasses="1"/>
+    <AppVersion sequence="49" timestamp="1442598442149" release="" codeSize="48" numClasses="1"/>
+    <AppVersion sequence="50" timestamp="1442598600260" release="" codeSize="54" numClasses="1"/>
+  </History>
+</BugCollection>

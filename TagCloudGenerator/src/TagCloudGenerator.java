@@ -1,0 +1,270 @@
+import java.util.Comparator;
+
+import components.map.Map;
+import components.map.Map.Pair;
+import components.map.Map2;
+import components.simplereader.SimpleReader;
+import components.simplereader.SimpleReader1L;
+import components.simplewriter.SimpleWriter;
+import components.simplewriter.SimpleWriter1L;
+import components.sortingmachine.SortingMachine;
+import components.sortingmachine.SortingMachine3;
+import components.utilities.Reporter;
+
+/**
+ * This program asks the user to input text file, and it will generates a tag
+ * cloud with given number of words in alphabetical order.
+ *
+ * @author Sheng Wang, Bolong Zhang
+ */
+public final class TagCloudGenerator {
+
+    /**
+     * The separators.
+     */
+    private static final String SEPARATORS = " \t\n\r`~!@#$%^&*()-_+=[]{}\\|:;'\",.<>/?";
+
+    /**
+     * Minimum occurred frequency of the word.
+     */
+    private static int minNumber = 0;
+
+    /**
+     * Maximum occurred frequency of the word.
+     */
+    private static int maxNumber = 0;
+
+    /**
+     * Maximum font size.
+     */
+    public static final int MAX_FONT_SIZE = 48;
+
+    /**
+     * Minimum font size.
+     */
+    public static final int MIN_FONT_SIZE = 11;
+
+    /**
+     * Default constructor--private to prevent instantiation.
+     */
+    private TagCloudGenerator() {
+
+    }
+
+    /**
+     * Comparator to compare words according to alphabet.
+     */
+    private static class alphComparator
+            implements Comparator<Pair<String, Integer>> {
+        @Override
+        public int compare(Pair<String, Integer> p1, Pair<String, Integer> p2) {
+            return p1.key().toLowerCase().compareTo(p2.key().toLowerCase());
+        }
+    }
+
+    /**
+     * Comparator to compare words according to frequency.
+     */
+    private static class numComparator
+            implements Comparator<Pair<String, Integer>> {
+        @Override
+        public int compare(Pair<String, Integer> p1, Pair<String, Integer> p2) {
+            return p2.value() - p1.value();
+        }
+    }
+
+    /**
+     * Check whether the character is a separator.
+     *
+     * @param c
+     *            the character to be checked
+     * @param separator
+     *            the string of separators
+     * @return true if the character is a separator
+     */
+    private static boolean isSeparator(char c, String separator) {
+        boolean result = false;
+        for (int i = 0; i < separator.length(); i++) {
+            if (c == separator.charAt(i)) {
+                result = true;
+            }
+        }
+        return result;
+    }
+
+    /**
+     * Read the words from a file and add them into a map with the word and its
+     * occurred frequency.
+     *
+     * @param inFile
+     *            the file to be read from
+     * @return the map with the word and frequency
+     * @ensures word is in the map.key if it is in the file && map.value is its
+     *          occurred frequency
+     */
+    private static Map<String, Integer> readFromFile(SimpleReader inFile) {
+        Map<String, Integer> map = new Map2<String, Integer>();
+        String word = "";
+        int count = 0;
+        // Constantly add words from the file into the map
+        while (!inFile.atEOS()) {
+            char next = Character.toLowerCase(inFile.read());
+            if (isSeparator(next, SEPARATORS)) {
+                if (!word.equals("")) {
+                    count = 1;
+                    if (map.hasKey(word)) {
+                        count = map.value(word);
+                        count++;
+                        map.remove(word);
+                    }
+                    map.add(word, count);
+                }
+                word = "";
+            } else {
+                word += next;
+            }
+        }
+        // Add the last word from the file
+        if (!word.equals("")) {
+            count = 1;
+            if (map.hasKey(word)) {
+                count = map.value(word);
+                count++;
+                map.remove(word);
+            }
+            map.add(word, count);
+        }
+        return map;
+    }
+
+    /**
+     * Sort words in the map in the order of ({@code} numComparator), and sort
+     * the first number of ({@code} size) in the order of (
+     * {@code} alphComparator()).
+     *
+     * @param map
+     *            the map of words to be sorted
+     * @param size
+     *            the number of words in the cloud
+     * @return the SortingMachine in alphabetic order
+     * @ensures SortingMachine.size == size &&
+     *          SortingMachine.isInInsertionMode() == false
+     */
+    private static SortingMachine<Map.Pair<String, Integer>> sortedWords(
+            Map<String, Integer> map, int size) {
+        SortingMachine<Map.Pair<String, Integer>> sortedAlphWords = new SortingMachine3<Map.Pair<String, Integer>>(
+                new alphComparator());
+        SortingMachine<Map.Pair<String, Integer>> sortedNumWords = new SortingMachine3<Map.Pair<String, Integer>>(
+                new numComparator());
+        Map<String, Integer> temp = map.newInstance();
+        temp.transferFrom(map);
+        while (temp.size() > 0) {
+            Pair<String, Integer> p = temp.removeAny();
+            sortedNumWords.add(p);
+            map.add(p.key(), p.value());
+        }
+        sortedNumWords.changeToExtractionMode();
+        for (int i = 0; sortedNumWords.size() > 0 && i < size; i++) {
+            Map.Pair<String, Integer> pair = sortedNumWords.removeFirst();
+            sortedAlphWords.add(pair);
+            if (i == 0) {
+                maxNumber = pair.value();
+            } else if (i == size - 1) {
+                minNumber = pair.value();
+            }
+        }
+        sortedAlphWords.changeToExtractionMode();
+        return sortedAlphWords;
+    }
+
+    /**
+     * Print the (@code sortedWords) to (@code outFile) with size of the (@code
+     * sortedWords) in the HTML format.
+     *
+     * @param sortedWords
+     *            the sortingMachine of words to be printed
+     * @param outFile
+     *            the HTML file to be printed
+     * @param fileName
+     *            the name of the input file
+     * @ensures words in sortedWords are in the file && words in sortedWords are
+     *          in the same order in the file
+     */
+    private static void printPage(
+            SortingMachine<Map.Pair<String, Integer>> sortedWords,
+            SimpleWriter outFile, String fileName) {
+        // Print the file header
+        outFile.println("<!DOCTYPE html>");
+        outFile.println("<html>");
+        outFile.println("<head>");
+        outFile.println("<title>Top " + sortedWords.size() + " words in "
+                + fileName + "</title>");
+        outFile.println(
+                "<link href=\"doc/tagcloud.css\" rel=\"stylesheet\" type=\"text/css\">");
+        outFile.println("</head>");
+        outFile.println("<body>");
+        outFile.println("<h2>Top " + sortedWords.size() + " words in "
+                + fileName + "</h2>");
+        outFile.println("<hr />");
+        outFile.println("<div class=\"cdiv\">");
+        outFile.println("<p class=\"cbox\">");
+
+        // Print the words
+        int fontSize = MIN_FONT_SIZE;
+        while (sortedWords.size() > 0) {
+            Map.Pair<String, Integer> p = sortedWords.removeFirst();
+            if (p.value() == minNumber) {
+                fontSize = MIN_FONT_SIZE;
+            } else if (p.value() == maxNumber) {
+                fontSize = MAX_FONT_SIZE;
+            } else {
+                fontSize = (int) Math
+                        .floor((MIN_FONT_SIZE + (((0.0 + p.value() - minNumber)
+                                / (maxNumber - minNumber))
+                                * (MAX_FONT_SIZE - MIN_FONT_SIZE))));
+            }
+            outFile.println("<span style=\"cursor:default\" class=\"f"
+                    + fontSize + "\" title=\"count: " + p.value() + "\">"
+                    + p.key() + "</span>");
+        }
+
+        // Print the file footer
+        outFile.println("</p>");
+        outFile.println("</div>");
+        outFile.println("</body>");
+        outFile.println("</html>");
+    }
+
+    /**
+     * Main method.
+     *
+     * @param args
+     *            the command line arguments
+     */
+    public static void main(String[] args) {
+        SimpleReader in = new SimpleReader1L();
+        SimpleWriter out = new SimpleWriter1L();
+        out.print("Please enter the name of the input file: ");
+        String inFileName = in.nextLine();
+        out.print("Please enter the name of the output file: ");
+        String outFileName = in.nextLine();
+        out.print("Enter the size of the tag cloud: ");
+        int size = in.nextInteger();
+
+        SimpleReader inFile = new SimpleReader1L(inFileName);
+        SimpleWriter outFile = new SimpleWriter1L(outFileName);
+        Map<String, Integer> wordMap = readFromFile(inFile);
+        // Report an error if the size is more than words
+        Reporter.assertElseFatalError(wordMap.size() >= size,
+                "The number of distinct words is less than the size of the tag cloud.");
+        SortingMachine<Pair<String, Integer>> sortedWords = sortedWords(wordMap,
+                size);
+        printPage(sortedWords, outFile, inFileName);
+
+        in.close();
+        out.close();
+        inFile.close();
+        outFile.close();
+    }
+
+}

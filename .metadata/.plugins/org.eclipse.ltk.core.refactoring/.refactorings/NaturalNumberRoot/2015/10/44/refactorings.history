@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;sum&apos; in &apos;NaturalNumberRoot.productOfDigits1(...)&apos; to &apos;product&apos;&#x0D;&#x0A;- Original project: &apos;NaturalNumberRoot&apos;&#x0D;&#x0A;- Original element: &apos;NaturalNumberRoot.productOfDigits1(NaturalNumber).sum&apos;&#x0D;&#x0A;- Renamed element: &apos;sum&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;sum&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{NaturalNumberRoot.java[NaturalNumberRoot~productOfDigits1~QNaturalNumber;@sum!3466!3507!3480!3482!QNaturalNumber;!0!false" name="product" references="true" stamp="1446137916506" version="1.0"/>
+</session>

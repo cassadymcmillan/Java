@@ -1,0 +1,69 @@
+import components.map.Map;
+import components.map.Map1L;
+
+/**
+ * Implementation of {@code EmailAccount}.
+ *
+ * @author Put your name here
+ *
+ */
+public final class EmailAccount1 implements EmailAccount {
+
+    /*
+     * Private members --------------------------------------------------------
+     */
+
+    private String firstName;
+    private String lastName;
+    private String emailAddress;
+
+    /*
+     * Constructor ------------------------------------------------------------
+     */
+
+    /**
+     * Constructor.
+     *
+     * @param firstName
+     *            the first name
+     * @param lastName
+     *            the last name
+     */
+    public EmailAccount1(String firstName, String lastName) {
+
+        Map<String, Integer> map = new Map1L<String, Integer>();
+        this.firstName = firstName;
+        this.lastName = lastName;
+        if (map.hasKey(lastName)) {
+            int i = map.value(lastName) + 1;
+            map.replaceValue(lastName, i);
+            this.emailAddress = lastName + "." + i + "@osu.edu";
+        } else {
+            map.add(lastName, 1);
+            this.emailAddress = lastName + "." + "1@osu.edu";
+        }
+    }
+
+    /*
+     * Methods ----------------------------------------------------------------
+     */
+
+    @Override
+    public String name() {
+
+        return this.firstName + " " + this.lastName;
+    }
+
+    @Override
+    public String emailAddress() {
+
+        return this.emailAddress;
+    }
+
+    @Override
+    public String toString() {
+
+        return "Name: " + this.name() + ", Email: " + this.emailAddress;
+    }
+
+}

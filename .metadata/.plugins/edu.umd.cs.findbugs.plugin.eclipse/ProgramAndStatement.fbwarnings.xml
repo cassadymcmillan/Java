@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="33" timestamp="1458925812077" analysisTimestamp="1458925811611" release="">
+  <Project projectName="ProgramAndStatement">
+    <Jar>E:\eclipse\workspace\ProgramAndStatement\bin\StatementTest.class</Jar>
+    <AuxClasspathEntry>E:\eclipse\workspace\ProgramAndStatement\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\sheng\Desktop\components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>E:\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>E:\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_66\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>E:\eclipse\workspace\ProgramAndStatement\src</SrcDir>
+    <SrcDir>E:\eclipse\workspace\ProgramAndStatement\test</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="3" last="9" removedByChange="true">
+    <Class classname="Statement2$StatementLabel">
+      <SourceLine classname="Statement2$StatementLabel" sourcefile="Statement2.java" sourcepath="Statement2.java"/>
+    </Class>
+    <Field classname="Statement2$StatementLabel" name="instruction" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="Statement2$StatementLabel" sourcefile="Statement2.java" sourcepath="Statement2.java"/>
+    </Field>
+    <SourceLine classname="Statement2$StatementLabel" start="81" end="81" startBytecode="77" endBytecode="77" sourcefile="Statement2.java" sourcepath="Statement2.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Fri, 25 Mar 2016 13:10:11 -0400" total_classes="1" referenced_classes="20" total_bugs="0" total_size="273" num_packages="1" java_version="1.8.0_66" vm_version="25.66-b18" cpu_seconds="1.55" clock_seconds="0.47" peak_mbytes="585.71" alloc_mbytes="910.50" gc_seconds="0.00">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="273">
+      <ClassStats class="StatementTest" sourceFile="StatementTest.java" interface="false" size="273" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="101" invocations="338" avgMicrosecondsPerInvocation="300" maxMicrosecondsPerInvocation="3719" standardDeviationMircosecondsPerInvocation="533"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="73" invocations="2" avgMicrosecondsPerInvocation="36963" maxMicrosecondsPerInvocation="64727" standardDeviationMircosecondsPerInvocation="27764"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="34" invocations="339" avgMicrosecondsPerInvocation="100" maxMicrosecondsPerInvocation="611" standardDeviationMircosecondsPerInvocation="59"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="18" invocations="20" avgMicrosecondsPerInvocation="901" maxMicrosecondsPerInvocation="4901" standardDeviationMircosecondsPerInvocation="1277"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="14" invocations="24" avgMicrosecondsPerInvocation="603" maxMicrosecondsPerInvocation="1469" standardDeviationMircosecondsPerInvocation="390"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="14" invocations="20" avgMicrosecondsPerInvocation="718" maxMicrosecondsPerInvocation="3798" standardDeviationMircosecondsPerInvocation="957"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="12" invocations="24" avgMicrosecondsPerInvocation="533" maxMicrosecondsPerInvocation="1758" standardDeviationMircosecondsPerInvocation="361"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="12" invocations="305" avgMicrosecondsPerInvocation="41" maxMicrosecondsPerInvocation="406" standardDeviationMircosecondsPerInvocation="58"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="12" invocations="83" avgMicrosecondsPerInvocation="150" maxMicrosecondsPerInvocation="901" standardDeviationMircosecondsPerInvocation="157"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1458663234540" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1458663234540" release="" codeSize="74" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1458696383488" release="" codeSize="80" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1458699106977" release="" codeSize="168" numClasses="2"/>
+    <AppVersion sequence="4" timestamp="1458699205560" release="" codeSize="172" numClasses="2"/>
+    <AppVersion sequence="5" timestamp="1458753596131" release="" codeSize="181" numClasses="2"/>
+    <AppVersion sequence="6" timestamp="1458754439970" release="" codeSize="181" numClasses="2"/>
+    <AppVersion sequence="7" timestamp="1458754454376" release="" codeSize="181" numClasses="2"/>
+    <AppVersion sequence="8" timestamp="1458754470928" release="" codeSize="181" numClasses="2"/>
+    <AppVersion sequence="9" timestamp="1458754988564" release="" codeSize="194" numClasses="2"/>
+    <AppVersion sequence="10" timestamp="1458842580642" release="" codeSize="208" numClasses="2"/>
+    <AppVersion sequence="11" timestamp="1458844431512" release="" codeSize="90" numClasses="1"/>
+    <AppVersion sequence="12" timestamp="1458844437805" release="" codeSize="89" numClasses="1"/>
+    <AppVersion sequence="13" timestamp="1458851754860" release="" codeSize="80" numClasses="1"/>
+    <AppVersion sequence="14" timestamp="1458851867225" release="" codeSize="80" numClasses="1"/>
+    <AppVersion sequence="15" timestamp="1458852156926" release="" codeSize="80" numClasses="1"/>
+    <AppVersion sequence="16" timestamp="1458852270527" release="" codeSize="208" numClasses="2"/>
+    <AppVersion sequence="17" timestamp="1458852296141" release="" codeSize="208" numClasses="2"/>
+    <AppVersion sequence="18" timestamp="1458852505040" release="" codeSize="208" numClasses="2"/>
+    <AppVersion sequence="19" timestamp="1458852556434" release="" codeSize="208" numClasses="2"/>
+    <AppVersion sequence="20" timestamp="1458852568748" release="" codeSize="208" numClasses="2"/>
+    <AppVersion sequence="21" timestamp="1458852622720" release="" codeSize="208" numClasses="2"/>
+    <AppVersion sequence="22" timestamp="1458852707570" release="" codeSize="208" numClasses="2"/>
+    <AppVersion sequence="23" timestamp="1458852839219" release="" codeSize="208" numClasses="2"/>
+    <AppVersion sequence="24" timestamp="1458875327484" release="" codeSize="208" numClasses="2"/>
+    <AppVersion sequence="25" timestamp="1458875494972" release="" codeSize="208" numClasses="2"/>
+    <AppVersion sequence="26" timestamp="1458924505515" release="" codeSize="91" numClasses="1"/>
+    <AppVersion sequence="27" timestamp="1458924575587" release="" codeSize="200" numClasses="1"/>
+    <AppVersion sequence="28" timestamp="1458924777653" release="" codeSize="173" numClasses="1"/>
+    <AppVersion sequence="29" timestamp="1458924816363" release="" codeSize="245" numClasses="1"/>
+    <AppVersion sequence="30" timestamp="1458924837478" release="" codeSize="273" numClasses="1"/>
+    <AppVersion sequence="31" timestamp="1458924883834" release="" codeSize="273" numClasses="1"/>
+    <AppVersion sequence="32" timestamp="1458925298676" release="" codeSize="273" numClasses="1"/>
+  </History>
+</BugCollection>

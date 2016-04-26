@@ -1,0 +1,9 @@
+package a;
+
+public class aa {
+    public static void main(String[] args) {
+        System.out.println('\u5F20');
+        System.out.println('\u4F2F');
+        System.out.println('\u9F99');
+    }
+}

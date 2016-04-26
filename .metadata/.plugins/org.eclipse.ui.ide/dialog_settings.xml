@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="CleanDialogSettings">
+		<item value="567" key="DIALOG_WIDTH"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+		<item value="388" key="DIALOG_HEIGHT"/>
+		<item value="144" key="DIALOG_Y_ORIGIN"/>
+		<item value="359" key="DIALOG_X_ORIGIN"/>
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\sheng\Desktop\BLParser.zip"/>
+			<item value="C:\Users\sheng\Desktop\ProgramAndStatement.zip"/>
+			<item value="C:\Users\sheng\Desktop\StatementPrettyPrint.zip"/>
+			<item value="C:\Users\sheng\Desktop\ProgramPrettyPrint.zip"/>
+			<item value="C:\Users\sheng\Desktop\ListWithRetreat.zip"/>
+			<item value="C:\Users\sheng\Desktop\SortingMachineWithHeapsort.zip"/>
+			<item value="C:\Users\sheng\Desktop\SetOnBST.zip"/>
+			<item value="C:\Users\sheng\Desktop\MapOnQueue.zip"/>
+			<item value="C:\Users\sheng\Desktop\MapWithHashing.zip"/>
+			<item value="C:\Users\sheng\Desktop\HashingExperiments.zip"/>
+			<item value="C:\Users\sheng\Desktop\SequenceOnStack.zip"/>
+			<item value="C:\Users\sheng\Desktop\NaturalNumberOnString.zip"/>
+			<item value="C:\Users\sheng\Desktop\Project_11(NaturalNumberCalculator).zip"/>
+			<item value="C:\Users\sheng\Desktop\NaturalNumberCalculator.zip"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.wst.web.ui.internal.wizards.SimpleWebProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.jdt.ui.java"/>
+			<item value="org.eclipse.wst.web.ui"/>
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="379" key="DIALOG_X_ORIGIN"/>
+		<item value="160" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="BasicNewProjectResourceWizard">
+	</section>
+</section>

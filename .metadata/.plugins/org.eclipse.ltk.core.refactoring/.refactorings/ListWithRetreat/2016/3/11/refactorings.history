@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;rightFront&apos; in &apos;List3.addRightFront(...)&apos; to &apos;newNode&apos;&#x0D;&#x0A;- Original project: &apos;ListWithRetreat&apos;&#x0D;&#x0A;- Original element: &apos;List3.addRightFront(T).rightFront&apos;&#x0D;&#x0A;- Renamed element: &apos;rightFront&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;rightFront&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{List3.java[List3~addRightFront~QT;@rightFront!8394!8422!8399!8408!QNode;!0!false" name="newNode" references="true" stamp="1457317365695" version="1.0"/>
+</session>

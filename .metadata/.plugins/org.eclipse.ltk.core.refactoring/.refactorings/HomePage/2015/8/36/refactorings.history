@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;HomePage/WebContent/P_344409_0__1509107791.jpg&apos; to &apos;kaifeng.jpg&apos;" description="Rename resource &apos;P_344409_0__1509107791.jpg&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/P_344409_0__1509107791.jpg" name="kaifeng.jpg" stamp="1441054428004" updateReferences="true"/>
+</session>

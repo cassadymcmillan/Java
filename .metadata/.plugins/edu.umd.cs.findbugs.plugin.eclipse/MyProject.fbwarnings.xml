@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="19" timestamp="1445534371488" analysisTimestamp="1445534371013" release="">
+  <Project projectName="MyProject">
+    <Jar>C:\Users\sheng\Desktop\workspace\MyProject\bin\IntegerRoot.class</Jar>
+    <AuxClasspathEntry>C:\Users\sheng\Desktop\workspace\MyProject\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\sheng\Desktop\components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\sheng\Desktop\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\sheng\Desktop\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_60\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\sheng\Desktop\workspace\MyProject\src</SrcDir>
+    <SrcDir>C:\Users\sheng\Desktop\workspace\MyProject\test</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DB_DUPLICATE_BRANCHES" priority="2" rank="17" abbrev="DB" category="STYLE" first="3">
+    <Class classname="IntegerRoot">
+      <SourceLine classname="IntegerRoot" sourcefile="IntegerRoot.java" sourcepath="IntegerRoot.java"/>
+    </Class>
+    <Method classname="IntegerRoot" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="IntegerRoot" start="84" end="105" startBytecode="0" endBytecode="541" sourcefile="IntegerRoot.java" sourcepath="IntegerRoot.java"/>
+    </Method>
+    <SourceLine classname="IntegerRoot" start="95" end="96" startBytecode="264" endBytecode="270" sourcefile="IntegerRoot.java" sourcepath="IntegerRoot.java"/>
+    <SourceLine classname="IntegerRoot" start="97" end="97" startBytecode="273" endBytecode="274" sourcefile="IntegerRoot.java" sourcepath="IntegerRoot.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="12" last="12" removedByChange="true">
+    <Class classname="IntegerRoot">
+      <SourceLine classname="IntegerRoot" sourcefile="IntegerRoot.java" sourcepath="IntegerRoot.java"/>
+    </Class>
+    <Field classname="IntegerRoot" name="sum" signature="Lcomponents/naturalnumber/NaturalNumber;" isStatic="true">
+      <SourceLine classname="IntegerRoot" start="68" end="68" startBytecode="0" endBytecode="0" sourcefile="IntegerRoot.java" sourcepath="IntegerRoot.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" first="13" last="13" removedByChange="true">
+    <Class classname="IntegerRoot">
+      <SourceLine classname="IntegerRoot" sourcefile="IntegerRoot.java" sourcepath="IntegerRoot.java"/>
+    </Class>
+    <Field classname="IntegerRoot" name="sum" signature="Lcomponents/naturalnumber/NaturalNumber;" isStatic="true">
+      <SourceLine classname="IntegerRoot" sourcefile="IntegerRoot.java" sourcepath="IntegerRoot.java"/>
+    </Field>
+    <SourceLine classname="IntegerRoot" start="75" end="75" startBytecode="30" endBytecode="30" sourcefile="IntegerRoot.java" sourcepath="IntegerRoot.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 22 Oct 2015 13:19:30 -0400" total_classes="1" referenced_classes="12" total_bugs="1" total_size="45" num_packages="1" java_version="1.8.0_60" vm_version="25.60-b23" cpu_seconds="1.56" clock_seconds="0.48" peak_mbytes="621.81" alloc_mbytes="910.50" gc_seconds="0.00" priority_2="1">
+    <PackageStats package="" total_bugs="1" total_types="1" total_size="45" priority_2="1">
+      <ClassStats class="IntegerRoot" sourceFile="IntegerRoot.java" interface="false" size="45" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="137" invocations="315" avgMicrosecondsPerInvocation="435" maxMicrosecondsPerInvocation="11026" standardDeviationMircosecondsPerInvocation="1061"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="98" invocations="2" avgMicrosecondsPerInvocation="49196" maxMicrosecondsPerInvocation="86252" standardDeviationMircosecondsPerInvocation="37056"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="41" invocations="315" avgMicrosecondsPerInvocation="130" maxMicrosecondsPerInvocation="763" standardDeviationMircosecondsPerInvocation="69"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="26" invocations="65" avgMicrosecondsPerInvocation="407" maxMicrosecondsPerInvocation="11014" standardDeviationMircosecondsPerInvocation="1364"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="15" invocations="12" avgMicrosecondsPerInvocation="1301" maxMicrosecondsPerInvocation="6295" standardDeviationMircosecondsPerInvocation="1855"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="15" invocations="30" avgMicrosecondsPerInvocation="501" maxMicrosecondsPerInvocation="11290" standardDeviationMircosecondsPerInvocation="2018"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="13" invocations="279" avgMicrosecondsPerInvocation="49" maxMicrosecondsPerInvocation="1167" standardDeviationMircosecondsPerInvocation="92"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="12" invocations="5" avgMicrosecondsPerInvocation="2529" maxMicrosecondsPerInvocation="7043" standardDeviationMircosecondsPerInvocation="2876"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1445310749644" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1445310749644" release="" codeSize="38" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1445523659351" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1445531390554" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1445531423274" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1445531441145" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1445531448731" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1445531457378" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1445531811514" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1445531824039" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="10" timestamp="1445532013701" release="" codeSize="48" numClasses="1"/>
+    <AppVersion sequence="11" timestamp="1445532020749" release="" codeSize="48" numClasses="1"/>
+    <AppVersion sequence="12" timestamp="1445532959573" release="" codeSize="26" numClasses="1"/>
+    <AppVersion sequence="13" timestamp="1445532990671" release="" codeSize="50" numClasses="1"/>
+    <AppVersion sequence="14" timestamp="1445533071809" release="" codeSize="52" numClasses="1"/>
+    <AppVersion sequence="15" timestamp="1445533467128" release="" codeSize="48" numClasses="1"/>
+    <AppVersion sequence="16" timestamp="1445533686036" release="" codeSize="56" numClasses="1"/>
+    <AppVersion sequence="17" timestamp="1445533768076" release="" codeSize="55" numClasses="1"/>
+    <AppVersion sequence="18" timestamp="1445533785725" release="" codeSize="55" numClasses="1"/>
+  </History>
+</BugCollection>

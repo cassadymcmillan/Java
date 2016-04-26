@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="27" timestamp="1457560118790" analysisTimestamp="1457560118371" release="">
+  <Project projectName="ListWithRetreat">
+    <Jar>E:\eclipse\workspace\ListWithRetreat\bin\List3Test.class</Jar>
+    <AuxClasspathEntry>E:\eclipse\workspace\ListWithRetreat\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\sheng\Desktop\components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>E:\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>E:\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_66\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>E:\eclipse\workspace\ListWithRetreat\test</SrcDir>
+    <SrcDir>E:\eclipse\workspace\ListWithRetreat\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" first="1" last="1" removedByChange="true">
+    <Class classname="List3$Node">
+      <SourceLine classname="List3$Node" sourcefile="List3.java" sourcepath="List3.java"/>
+    </Class>
+    <Field classname="List3$Node" name="data" signature="Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="List3$Node" sourcefile="List3.java" sourcepath="List3.java"/>
+    </Field>
+    <SourceLine classname="List3$Node" start="56" end="56" startBytecode="1" endBytecode="1" sourcefile="List3.java" sourcepath="List3.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 9 Mar 2016 16:48:38 -0500" total_classes="1" referenced_classes="18" total_bugs="0" total_size="7" num_packages="1" java_version="1.8.0_66" vm_version="25.66-b18" cpu_seconds="1.11" clock_seconds="0.42" peak_mbytes="653.83" alloc_mbytes="910.50" gc_seconds="0.00">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="7">
+      <ClassStats class="List3Test" sourceFile="List3Test.java" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="192" invocations="329" avgMicrosecondsPerInvocation="586" maxMicrosecondsPerInvocation="8732" standardDeviationMircosecondsPerInvocation="1120"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="76" invocations="2" avgMicrosecondsPerInvocation="38357" maxMicrosecondsPerInvocation="67655" standardDeviationMircosecondsPerInvocation="29298"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="32" invocations="331" avgMicrosecondsPerInvocation="97" maxMicrosecondsPerInvocation="502" standardDeviationMircosecondsPerInvocation="53"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="13" invocations="18" avgMicrosecondsPerInvocation="776" maxMicrosecondsPerInvocation="4103" standardDeviationMircosecondsPerInvocation="1042"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1457316541200" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1457316541209" release="" codeSize="148" numClasses="3"/>
+    <AppVersion sequence="2" timestamp="1457317788673" release="" codeSize="163" numClasses="3"/>
+    <AppVersion sequence="3" timestamp="1457317851264" release="" codeSize="166" numClasses="3"/>
+    <AppVersion sequence="4" timestamp="1457317935175" release="" codeSize="172" numClasses="3"/>
+    <AppVersion sequence="5" timestamp="1457317997211" release="" codeSize="172" numClasses="3"/>
+    <AppVersion sequence="6" timestamp="1457558430510" release="" codeSize="317" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1457558431272" release="" codeSize="172" numClasses="3"/>
+    <AppVersion sequence="8" timestamp="1457558451735" release="" codeSize="317" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1457559120991" release="" codeSize="172" numClasses="3"/>
+    <AppVersion sequence="10" timestamp="1457559221949" release="" codeSize="172" numClasses="3"/>
+    <AppVersion sequence="11" timestamp="1457559268304" release="" codeSize="172" numClasses="3"/>
+    <AppVersion sequence="12" timestamp="1457559386793" release="" codeSize="172" numClasses="3"/>
+    <AppVersion sequence="13" timestamp="1457559412797" release="" codeSize="172" numClasses="3"/>
+    <AppVersion sequence="14" timestamp="1457559567803" release="" codeSize="172" numClasses="3"/>
+    <AppVersion sequence="15" timestamp="1457559591634" release="" codeSize="172" numClasses="3"/>
+    <AppVersion sequence="16" timestamp="1457559652520" release="" codeSize="172" numClasses="3"/>
+    <AppVersion sequence="17" timestamp="1457559742798" release="" codeSize="172" numClasses="3"/>
+    <AppVersion sequence="18" timestamp="1457559765184" release="" codeSize="172" numClasses="3"/>
+    <AppVersion sequence="19" timestamp="1457559801370" release="" codeSize="172" numClasses="3"/>
+    <AppVersion sequence="20" timestamp="1457559829864" release="" codeSize="172" numClasses="3"/>
+    <AppVersion sequence="21" timestamp="1457559850690" release="" codeSize="172" numClasses="3"/>
+    <AppVersion sequence="22" timestamp="1457559912162" release="" codeSize="172" numClasses="3"/>
+    <AppVersion sequence="23" timestamp="1457559937684" release="" codeSize="172" numClasses="3"/>
+    <AppVersion sequence="24" timestamp="1457560007141" release="" codeSize="172" numClasses="3"/>
+    <AppVersion sequence="25" timestamp="1457560080647" release="" codeSize="172" numClasses="3"/>
+    <AppVersion sequence="26" timestamp="1457560086859" release="" codeSize="317" numClasses="1"/>
+  </History>
+</BugCollection>

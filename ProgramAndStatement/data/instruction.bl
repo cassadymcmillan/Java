@@ -1,0 +1,32 @@
+PROGRAM TestA IS
+
+  INSTRUCTION moveFoward IS
+     move
+  END moveFoward
+  
+  INSTRUCTION left IS
+    turnleft
+    turnleft
+  END left
+
+  INSTRUCTION FindObstacle IS
+    WHILE next-is-empty DO
+      move
+    END WHILE
+  END FindObstacle
+  
+  INSTRUCTION findFriend IS
+    IF next-is-friend THEN
+      turnright
+    END IF
+  END findFriend
+  
+  INSTRUCTION findEnemy IS
+    IF next-is-enemy THEN
+      infect
+    END IF
+  END findEnemy
+
+BEGIN
+  
+END TestA
